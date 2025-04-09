@@ -1,0 +1,93 @@
+[
+  {
+    "id": 1,
+    "title": "Spaghetti Carbonara",
+    "image": "src/assets/Spaghetti.png",
+    "cookingTime": "25 mins",
+    "rating": 4.5,
+    "ingredients": [
+      "200g Spaghetti",
+      "100g Pancetta",
+      "2 Eggs",
+      "50g Parmesan",
+      "50g Pecorino",
+      "Salt and Pepper"
+    ],
+    "steps": [
+      "Cook spaghetti according to package instructions.",
+      "Fry pancetta in a pan until crispy.",
+      "In a bowl, whisk eggs, parmesan, and pecorino.",
+      "Toss cooked spaghetti with pancetta and egg mixture.",
+      "Season with salt and pepper and serve."
+    ],
+    "createdBy": "JohnDoe"
+  },
+  {
+    "id": 2,
+    "title": "Avocado Toast",
+    "image": "src/assets/avacado.png",
+    "cookingTime": "10 mins",
+    "rating": 4.2,
+    "ingredients": [
+      "1 Avocado",
+      "2 Slices of Bread",
+      "Lemon Juice",
+      "Salt and Pepper",
+      "Olive Oil"
+    ],
+    "steps": [
+      "Toast the bread slices.",
+      "Mash the avocado with lemon juice.",
+      "Spread mashed avocado on toasted bread.",
+      "Season with salt, pepper, and drizzle with olive oil."
+    ],
+    "createdBy": "JaneSmith"
+  },
+  {
+    "id": 3,
+    "title": "Classic Burger",
+    "image": "src/assets/Burger.png",
+    "cookingTime": "30 mins",
+    "rating": 2.7,
+    "ingredients": [
+      "500g Ground Beef",
+      "1 Egg",
+      "Burger Buns",
+      "Lettuce",
+      "Tomato",
+      "Cheese",
+      "Salt and Pepper"
+    ],
+    "steps": [
+      "Form beef into patties and season with salt and pepper.",
+      "Cook patties in a pan or on the grill to desired doneness.",
+      "Toast the burger buns.",
+      "Assemble the burger with lettuce, tomato, cheese, and the patty."
+    ],
+    "createdBy": "Foodie123"
+  },
+  {
+    "id": 4,
+    "title": "Sushi Platter",
+    "image": "src/assets/sushi.png",
+    "cookingTime": "45 mins",
+    "rating": 4.9,
+    "ingredients": [
+      "Sushi Rice",
+      "Nori Sheets",
+      "Fresh Salmon",
+      "Cucumber",
+      "Soy Sauce",
+      "Wasabi",
+      "Rice Vinegar"
+    ],
+    "steps": [
+      "Cook sushi rice and season with rice vinegar.",
+      "Slice salmon and cucumber into thin strips.",
+      "Place nori sheet on a bamboo mat and spread rice evenly.",
+      "Add salmon and cucumber, then roll tightly.",
+      "Slice the roll into pieces and serve with soy sauce and wasabi."
+    ],
+    "createdBy": "SushiMaster"
+  }
+]
