@@ -15,10 +15,10 @@ const Navbar = () => {
     }, [darkMode]);
 
     return (
-        <nav className="bg-orange-500 dark:bg-gray-900 shadow-md transition-colors duration-300">
+        <nav className="fixed top-0 left-0 w-full z-50 bg-orange-500 dark:bg-gray-900 shadow-md transition-colors duration-300">
             <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
                 {/* Logo */}
-                <Link to="/" className="text-white text-2xl font-extrabold tracking-wide">
+                <Link to="/home" className="text-white text-2xl font-extrabold tracking-wide">
                     Recipe<span className="text-orange-200">Share</span>
                 </Link>
 
