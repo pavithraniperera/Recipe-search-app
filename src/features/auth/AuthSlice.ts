@@ -2,7 +2,14 @@ import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
 interface AuthState {
     isAuthenticated: boolean;
-    user: { username: string; email: string } | null;
+    user: {
+        userId: string;
+        username: string;
+        email: string;
+        password: string;
+        profileImage: string;
+
+    } | null;
 }
 
 
@@ -13,6 +20,8 @@ const getUserFromLocalStorage = () => {
 };
 
 const initialUser = getUserFromLocalStorage();
+const generateUserId = () => `user_${Date.now()}`; // E.g., user_1616586741567
+
 
 const authSlice = createSlice({
     name: 'auth',
@@ -24,7 +33,7 @@ const authSlice = createSlice({
         signupSuccess: (state, action: PayloadAction<{ username: string; email: string; password: string }>) => {
             // Store user data in localStorage
             const { username, email, password } = action.payload;
-            const user = { username, email, password };
+            const user = { userId:generateUserId(),username, email, password };
             localStorage.setItem('user', JSON.stringify(user));
 
             state.isAuthenticated = true;

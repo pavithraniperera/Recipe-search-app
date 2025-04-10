@@ -7,6 +7,7 @@ import {MainLayout} from "./features/MainLayout.tsx";
 import HomePage from "./pages/HomePage.tsx";
 import store from "./store/store.ts";
 import RecipeDetailsPage from "./pages/RecipeDetailPage.tsx";
+import ProfilePage from "./pages/Profile.tsx";
 
 
 
@@ -27,6 +28,7 @@ function App() {
                 children: [
                     { path: "home", element: <HomePage /> },
                     { path:"recipes/:id" ,element:<RecipeDetailsPage/> },
+                    { path:"profile" ,element:<ProfilePage/> },
 
 
                 ],
