@@ -5,12 +5,11 @@ interface RecipeCardProps {
     id: number;
     title: string;
     image: string;
-    description: string;
     cookingTime: string;
     rating: number;
 }
 
-const RecipeCard: FC<RecipeCardProps> = ({ id, title, image, description, cookingTime, rating }) => {
+const RecipeCard: FC<RecipeCardProps> = ({ id, title, image, cookingTime, rating }) => {
     const renderStars = (rating: number) => {
         const stars = [];
         for (let i = 1; i <= 5; i++) {
@@ -34,7 +33,6 @@ const RecipeCard: FC<RecipeCardProps> = ({ id, title, image, description, cookin
             <img src={image} alt={title} className="w-full h-48 object-cover" />
             <div className="p-4">
                 <h3 className="text-xl font-semibold text-orange-600 dark:text-orange-400 mb-1">{title}</h3>
-                <p className="text-gray-600 dark:text-gray-300 text-sm mb-1">{description}</p>
                 <p className="text-gray-500 dark:text-gray-400 text-xs mb-2">🕒 {cookingTime}</p>
                 <div className="mb-2">{renderStars(rating)}</div>
                 <Link

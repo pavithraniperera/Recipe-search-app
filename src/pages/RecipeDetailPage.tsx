@@ -1,5 +1,5 @@
 import { useParams, useNavigate } from "react-router-dom";
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 import { useEffect, useState } from "react";
 import { Star } from "lucide-react";
 import clsx from "clsx";
@@ -7,22 +7,29 @@ import {
     addFavorite,
     removeFavorite,
     isFavorite,
-} from "../utils/favoriteUtils"; // Adjust path as needed
+} from "../utils/favoriteUtils";
+import {removeRecipe} from "../features/recipes/RecipeSlice.ts";
+
 
 const RecipeDetailsPage = () => {
     const { id } = useParams();
+    const dispatch = useDispatch();
+    const navigate = useNavigate();
+
     const recipe = useSelector((state: any) =>
         state.recipes.recipeList.find((r: any) => r.id === parseInt(id || "0"))
     );
 
     const user = useSelector((state: any) => state.auth.user);
-    const navigate = useNavigate();
-
     const [isSaved, setIsSaved] = useState(false);
+
+    const isOwner = user && recipe && user.userId == recipe.createdBy;
+
 
     useEffect(() => {
         if (user && recipe) {
             setIsSaved(isFavorite(user.userId, recipe.id));
+
         }
     }, [user, recipe]);
 
@@ -35,6 +42,14 @@ const RecipeDetailsPage = () => {
             addFavorite(user.userId, recipe.id);
         }
         setIsSaved(!isSaved);
+    };
+
+    const handleDeleteRecipe = (recipeId: number) => {
+        const confirmDelete = window.confirm("Are you sure you want to delete this recipe?");
+        if (!confirmDelete) return;
+
+        dispatch(removeRecipe(recipeId));
+        navigate("/home");
     };
 
     if (!recipe) {
@@ -69,9 +84,9 @@ const RecipeDetailsPage = () => {
                     </h2>
 
                     <div className="flex items-center gap-6 text-sm text-gray-600 dark:text-gray-300">
-            <span className="font-medium">
-              Cooking Time: {recipe.cookingTime} mins
-            </span>
+                        <span className="font-medium">
+                            Cooking Time: {recipe.cookingTime} mins
+                        </span>
                         <div className="flex items-center gap-1">
                             {[1, 2, 3, 4, 5].map((i) => (
                                 <Star
@@ -114,7 +129,7 @@ const RecipeDetailsPage = () => {
                         </ol>
                     </div>
 
-                    {/* Save Button */}
+                    {/* Save to Favorites */}
                     <button
                         onClick={handleToggleFavorite}
                         className={clsx(
@@ -126,6 +141,24 @@ const RecipeDetailsPage = () => {
                     >
                         {isSaved ? "Saved to Favorites" : "Save to Favorites"}
                     </button>
+
+                    {/* Edit/Delete Buttons if user is the owner */}
+                    {isOwner && (
+                        <div className="flex gap-4 mt-6">
+                            <button
+                                onClick={() => navigate(`/edit/${recipe.id}`)}
+                                className="px-6 py-2 bg-blue-500 hover:bg-blue-600 text-white rounded-full transition"
+                            >
+                                Edit Recipe
+                            </button>
+                            <button
+                                onClick={() => handleDeleteRecipe(recipe.id)}
+                                className="px-6 py-2 bg-red-500 hover:bg-red-600 text-white rounded-full transition"
+                            >
+                                Delete Recipe
+                            </button>
+                        </div>
+                    )}
                 </div>
             </div>
         </div>
