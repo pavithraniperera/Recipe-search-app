@@ -40,7 +40,7 @@ export default function Signup() {
                         Discover, share, and save mouth-watering recipes from cooks around the world.
                     </p>
                     <img
-                        src="src/assets/Chef-pana.svg"
+                        src="../../public/assets/Chef-pana.svg"
                         alt="Chef Illustration"
                         className="mt-4 max-w-xs mx-auto"
                     />

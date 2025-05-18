@@ -1,93 +1,388 @@
+
+
 [
   {
     "id": 1,
-    "title": "Spaghetti Carbonara",
-    "image": "src/assets/Spaghetti.png",
+    "title": "Authentic Spaghetti Carbonara",
+    "image": "/assets/Spaghetti.png",
     "cookingTime": "25 mins",
-    "rating": 4.5,
+    "prepTime": "10 mins",
+    "servings": 2,
+    "difficulty": "medium",
+    "rating": 4.7,
+    "category": "pasta",
+    "likes": 128,
+    "views": 542,
+    "createdAt": "2023-05-15T09:30:00Z",
+    "createdBy": "user_1744263271763",
+    "author": "Marco Rossi",
+    "description": "The classic Roman pasta dish with creamy egg sauce and crispy pancetta",
     "ingredients": [
-      "200g Spaghetti",
-      "100g Pancetta",
-      "2 Eggs",
-      "50g Parmesan",
-      "50g Pecorino",
-      "Salt and Pepper"
+      {
+        "name": "Spaghetti",
+        "amount": "200g",
+        "note": "preferably bronze-die extruded"
+      },
+      {
+        "name": "Guanciale (or Pancetta)",
+        "amount": "100g",
+        "note": "diced"
+      },
+      {
+        "name": "Pecorino Romano",
+        "amount": "50g",
+        "note": "freshly grated"
+      },
+      {
+        "name": "Parmigiano Reggiano",
+        "amount": "50g",
+        "note": "freshly grated"
+      },
+      {
+        "name": "Eggs",
+        "amount": "2 large",
+        "note": "room temperature"
+      },
+      {
+        "name": "Black Pepper",
+        "amount": "to taste",
+        "note": "freshly ground"
+      },
+      {
+        "name": "Salt",
+        "amount": "to taste"
+      }
     ],
     "steps": [
-      "Cook spaghetti according to package instructions.",
-      "Fry pancetta in a pan until crispy.",
-      "In a bowl, whisk eggs, parmesan, and pecorino.",
-      "Toss cooked spaghetti with pancetta and egg mixture.",
-      "Season with salt and pepper and serve."
+      {
+        "number": 1,
+        "instruction": "Bring a large pot of salted water to boil for the pasta."
+      },
+      {
+        "number": 2,
+        "instruction": "In a bowl, whisk together eggs, grated cheeses, and plenty of black pepper."
+      },
+      {
+        "number": 3,
+        "instruction": "Cook guanciale in a skillet until crispy, then remove from heat.",
+        "timer": 5,
+        "timerUnit": "minutes"
+      },
+      {
+        "number": 4,
+        "instruction": "Cook spaghetti until al dente, reserving 1 cup of pasta water before draining."
+      },
+      {
+        "number": 5,
+        "instruction": "Toss hot pasta with guanciale, then quickly mix in egg mixture, adding pasta water as needed to create a creamy sauce."
+      }
     ],
-    "createdBy": "user_1744263271763"
+    "tips": [
+      "Use the heat from the pasta to cook the eggs gently and prevent scrambling",
+      "Authentic carbonara never uses cream!",
+      "Serve immediately as the sauce thickens quickly"
+    ],
+    "nutrition": {
+      "calories": 650,
+      "protein": "28g",
+      "carbs": "75g",
+      "fat": "25g"
+    }
   },
   {
     "id": 2,
-    "title": "Avocado Toast",
-    "image": "src/assets/avacado.png",
-    "cookingTime": "10 mins",
-    "rating": 4.2,
+    "title": "Avocado Toast with Poached Egg",
+    "image": "/assets/avacado.png",
+    "cookingTime": "15 mins",
+    "prepTime": "5 mins",
+    "servings": 1,
+    "difficulty": "easy",
+    "rating": 4.3,
+    "category": "breakfast",
+    "likes": 89,
+    "views": 321,
+    "createdAt": "2023-06-22T07:15:00Z",
+    "createdBy": "user_1744249201991",
+    "author": "Sophie Green",
+    "description": "A nutritious and Instagram-worthy breakfast with creamy avocado and perfectly poached egg",
     "ingredients": [
-      "1 Avocado",
-      "2 Slices of Bread",
-      "Lemon Juice",
-      "Salt and Pepper",
-      "Olive Oil"
+      {
+        "name": "Sourdough Bread",
+        "amount": "1 thick slice"
+      },
+      {
+        "name": "Ripe Avocado",
+        "amount": "1/2"
+      },
+      {
+        "name": "Egg",
+        "amount": "1 large"
+      },
+      {
+        "name": "Lemon Juice",
+        "amount": "1 tsp"
+      },
+      {
+        "name": "Red Pepper Flakes",
+        "amount": "pinch"
+      },
+      {
+        "name": "Extra Virgin Olive Oil",
+        "amount": "1 tbsp"
+      },
+      {
+        "name": "Salt and Pepper",
+        "amount": "to taste"
+      }
     ],
     "steps": [
-      "Toast the bread slices.",
-      "Mash the avocado with lemon juice.",
-      "Spread mashed avocado on toasted bread.",
-      "Season with salt, pepper, and drizzle with olive oil."
+      {
+        "number": 1,
+        "instruction": "Toast the bread until golden and crisp."
+      },
+      {
+        "number": 2,
+        "instruction": "Mash avocado with lemon juice, salt, and pepper."
+      },
+      {
+        "number": 3,
+        "instruction": "Poach egg in simmering water for 3 minutes until whites are set but yolk is runny."
+      },
+      {
+        "number": 4,
+        "instruction": "Spread avocado mixture on toast, top with poached egg."
+      },
+      {
+        "number": 5,
+        "instruction": "Drizzle with olive oil and sprinkle with red pepper flakes."
+      }
     ],
-    "createdBy": "JaneSmith"
+    "variations": [
+      "Add crumbled feta cheese",
+      "Top with cherry tomatoes",
+      "Sprinkle with everything bagel seasoning"
+    ],
+    "nutrition": {
+      "calories": 350,
+      "protein": "12g",
+      "carbs": "30g",
+      "fat": "22g"
+    }
   },
   {
     "id": 3,
-    "title": "Classic Burger",
-    "image": "src/assets/Burger.png",
-    "cookingTime": "30 mins",
-    "rating": 2.7,
+    "title": "Juicy Classic Cheeseburger",
+    "image": "/assets/cheeseburger.png",
+    "cookingTime": "20 mins",
+    "prepTime": "15 mins",
+    "servings": 4,
+    "difficulty": "medium",
+    "rating": 4.8,
+    "category": "grill",
+    "likes": 215,
+    "views": 876,
+    "createdAt": "2023-04-10T18:45:00Z",
+    "createdBy": "user_1744263271763",
+    "author": "Mike Johnson",
+    "description": "The ultimate backyard burger with perfect char and melty cheese",
     "ingredients": [
-      "500g Ground Beef",
-      "1 Egg",
-      "Burger Buns",
-      "Lettuce",
-      "Tomato",
-      "Cheese",
-      "Salt and Pepper"
+      {
+        "name": "Ground Beef",
+        "amount": "500g",
+        "note": "80/20 fat ratio"
+      },
+      {
+        "name": "Burger Buns",
+        "amount": "4",
+        "note": "brioche style"
+      },
+      {
+        "name": "American Cheese",
+        "amount": "4 slices"
+      },
+      {
+        "name": "Lettuce",
+        "amount": "4 leaves",
+        "note": "iceberg or romaine"
+      },
+      {
+        "name": "Tomato",
+        "amount": "1",
+        "note": "sliced"
+      },
+      {
+        "name": "Red Onion",
+        "amount": "1/2",
+        "note": "thinly sliced"
+      },
+      {
+        "name": "Pickles",
+        "amount": "8 slices"
+      },
+      {
+        "name": "Ketchup",
+        "amount": "to taste"
+      },
+      {
+        "name": "Mustard",
+        "amount": "to taste"
+      },
+      {
+        "name": "Mayonnaise",
+        "amount": "to taste"
+      },
+      {
+        "name": "Salt and Pepper",
+        "amount": "to taste"
+      }
     ],
     "steps": [
-      "Form beef into patties and season with salt and pepper.",
-      "Cook patties in a pan or on the grill to desired doneness.",
-      "Toast the burger buns.",
-      "Assemble the burger with lettuce, tomato, cheese, and the patty."
+      {
+        "number": 1,
+        "instruction": "Divide beef into 4 equal portions and gently form into patties slightly larger than your buns."
+      },
+      {
+        "number": 2,
+        "instruction": "Make a small indentation in the center of each patty to prevent bulging during cooking."
+      },
+      {
+        "number": 3,
+        "instruction": "Season both sides generously with salt and pepper."
+      },
+      {
+        "number": 4,
+        "instruction": "Grill or cook in a cast iron skillet over high heat for 3-4 minutes per side."
+      },
+      {
+        "number": 5,
+        "instruction": "Add cheese during last minute of cooking to melt."
+      },
+      {
+        "number": 6,
+        "instruction": "Toast buns lightly."
+      },
+      {
+        "number": 7,
+        "instruction": "Assemble burgers with your preferred condiments and toppings."
+      }
     ],
-    "createdBy": "user_1744249201991"
+    "tips": [
+      "Don't overwork the meat when forming patties",
+      "Let burgers rest for 5 minutes after cooking",
+      "Use a meat thermometer for perfect doneness (71°C for well done)"
+    ],
+    "nutrition": {
+      "calories": 780,
+      "protein": "42g",
+      "carbs": "45g",
+      "fat": "48g"
+    }
   },
   {
     "id": 4,
-    "title": "Sushi Platter",
-    "image": "src/assets/sushi.png",
-    "cookingTime": "45 mins",
+    "title": "Rainbow Sushi Platter",
+    "image": "/assets/sushi.png",
+    "cookingTime": "60 mins",
+    "prepTime": "30 mins",
+    "servings": 4,
+    "difficulty": "hard",
     "rating": 4.9,
+    "category": "japanese",
+    "likes": 342,
+    "views": 1205,
+    "createdAt": "2023-07-05T12:20:00Z",
+    "createdBy": "user_1744263271763",
+    "author": "Yuki Tanaka",
+    "description": "Beautiful assortment of nigiri, maki and sashimi for special occasions",
     "ingredients": [
-      "Sushi Rice",
-      "Nori Sheets",
-      "Fresh Salmon",
-      "Cucumber",
-      "Soy Sauce",
-      "Wasabi",
-      "Rice Vinegar"
+      {
+        "name": "Sushi Rice",
+        "amount": "2 cups",
+        "note": "short-grain"
+      },
+      {
+        "name": "Rice Vinegar",
+        "amount": "1/4 cup"
+      },
+      {
+        "name": "Sugar",
+        "amount": "2 tbsp"
+      },
+      {
+        "name": "Salt",
+        "amount": "1 tsp"
+      },
+      {
+        "name": "Nori Sheets",
+        "amount": "5"
+      },
+      {
+        "name": "Fresh Salmon",
+        "amount": "200g",
+        "note": "sushi-grade"
+      },
+      {
+        "name": "Tuna",
+        "amount": "200g",
+        "note": "sushi-grade"
+      },
+      {
+        "name": "Avocado",
+        "amount": "1"
+      },
+      {
+        "name": "Cucumber",
+        "amount": "1"
+      },
+      {
+        "name": "Wasabi",
+        "amount": "to taste"
+      },
+      {
+        "name": "Pickled Ginger",
+        "amount": "1/4 cup"
+      },
+      {
+        "name": "Soy Sauce",
+        "amount": "1/4 cup"
+      }
     ],
     "steps": [
-      "Cook sushi rice and season with rice vinegar.",
-      "Slice salmon and cucumber into thin strips.",
-      "Place nori sheet on a bamboo mat and spread rice evenly.",
-      "Add salmon and cucumber, then roll tightly.",
-      "Slice the roll into pieces and serve with soy sauce and wasabi."
+      {
+        "number": 1,
+        "instruction": "Rinse rice until water runs clear, then cook according to package instructions."
+      },
+      {
+        "number": 2,
+        "instruction": "Mix vinegar, sugar and salt, then fold into cooked rice while fanning to cool."
+      },
+      {
+        "number": 3,
+        "instruction": "Slice fish into thin slices for nigiri (about 5cm long, 2cm wide, 1cm thick)."
+      },
+      {
+        "number": 4,
+        "instruction": "For maki rolls: Place nori on bamboo mat, spread rice, add fillings (fish, avocado, cucumber), and roll tightly."
+      },
+      {
+        "number": 5,
+        "instruction": "Cut rolls into 6-8 pieces with a very sharp knife."
+      },
+      {
+        "number": 6,
+        "instruction": "Arrange nigiri and maki on platter with wasabi, ginger and soy sauce."
+      }
     ],
-    "createdBy": "SushiMaster"
+    "tips": [
+      "Keep hands wet when handling sushi rice to prevent sticking",
+      "Use the sharpest knife possible for clean cuts",
+      "Serve immediately at room temperature for best flavor"
+    ],
+    "nutrition": {
+      "calories": 420,
+      "protein": "24g",
+      "carbs": "65g",
+      "fat": "8g"
+    }
   }
 ]
